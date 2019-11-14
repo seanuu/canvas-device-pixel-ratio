@@ -43,8 +43,8 @@ function drawCircle () {
     ctx.clearRect(0, 0, viewport.width, viewport.height);
     ctx.save();
 
-    ctx.scale(transform.k, transform.k);
     ctx.translate(transform.x, transform.y);
+    ctx.scale(transform.k, transform.k);
 
     ctx.beginPath();
     ctx.arc(width / 2, height / 2, 50, 0, Math.PI * 2);
